@@ -1,4 +1,22 @@
 #!/usr/bin/python3
+"""
+0-gather_data_from_an_API.py
+
+This module retrieves TODO list progress for a given employee ID
+from the JSONPlaceholder REST API.
+
+It fetches:
+- The employee's name
+- All tasks assigned to the employee
+- Tasks that are completed
+
+It then prints the progress in the required format:
+Employee EMPLOYEE_NAME is done with tasks(DONE/TOTAL):
+    TASK_TITLE  (for each completed task)
+
+Usage:
+    python3 0-gather_data_from_an_API.py <employee_id>
+"""
 import requests
 import sys
 
